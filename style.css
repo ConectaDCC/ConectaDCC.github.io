@@ -48,7 +48,9 @@
 }
 
 #navbar #navbar-mid a{
-    text-align: center;
+    width: 115px;
+    /* display: flex; */
+    /* align-items: flex-end; */
 }
 #navbar-mid .illustration{
     width: 100px;
