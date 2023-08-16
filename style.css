@@ -1,3 +1,18 @@
+a {
+    color: #5ea29e;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover {
+    color: #325654;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+p{
+    text-align: center;
+}
+/********* navbar *************/
 /* Create a sticky/fixed navbar */
 #navbar {
     overflow: hidden;
@@ -15,16 +30,17 @@
     float: left;
     color: white;
     text-align: center;
-    padding: 12px;
+    margin: 12px;
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
-    /* border-radius: 4px; */
+    border-radius: 5px;
 }
 
 #navbar div {
     display: inline-block;
     padding-right: 1%;
+    padding-left: 1%;
 }
 
 #navbar #logo img {
@@ -43,7 +59,7 @@
     float: right;
 }
 
-#navbat #navbar-top{
+#navbar #navbar-top{
     text-align: left;
 }
 
@@ -80,16 +96,17 @@
     color: white;
   }
   
-  /* Display some links to the right */
-  #navbar-right {
-      float: right;
+/* Display some links to the right */
+#navbar-right {
+    float: right;
+}
+
+
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
+    #navbar {
+        padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
     }
-    
-    /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
-    @media screen and (max-width: 580px) {
-        #navbar {
-            padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
-        }
     #navbar a {
       float: none;
       display: block;
@@ -105,4 +122,54 @@
         border: white;
     
     }
+    
+}
+
+#content {
+    align-content: center;
+    margin-top: 50%;
+    padding: 15px 15px 2500px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.square { 
+    margin: 10px;
+    width: 500px;
+    height: 500px;
+    border: #325654 solid 3px;
+}
+
+div.squares{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.squares {
+
+border: #fa0000 solid 3px;
+
+display: flex;
+}
+
+.squares {}
+
+.squares {}
+
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #325654;
+    color: white;
+  }
+
+
+footer a:hover {
+    color: #d8fffc;
+    text-decoration: none;
+    background-color: transparent;
 }
