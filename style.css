@@ -1,3 +1,6 @@
+html{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 a {
     color: #5ea29e;
     text-decoration: none;
@@ -49,6 +52,7 @@ p{
 
 #navbar #navbar-top {
     width: 100%;
+    padding: 1;
 }
 #navbar #navbar-mid {
     padding: 20%;
@@ -82,6 +86,8 @@ p{
     font-size: 35px;
     font-weight: bold;
     transition: 0.4s;
+    display: flex;
+    align-items: center;
 }
 
 /* Links on mouse-over */

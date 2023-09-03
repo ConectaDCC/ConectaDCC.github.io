@@ -6,13 +6,18 @@ function scrollFunction() {
     document.getElementById("navbar").style.padding = "30px 10px";
     document.getElementById("navbar-mid").style.padding = "0px";
     document.getElementById("logo").style.fontSize = "25px";
-    document.getElementById("navbar-bottom").hidden = true;
-    for (let element of document.getElementsByClassName("illustration")) element.hidden = true;
+    document.getElementById("nome-logo-top").style.display = "none";
+    document.getElementById("navbar-bottom").style.display = "none";
+    for (let element of document.getElementsByClassName("illustration")) 
+    element.style.display = "none";
 } else {
     document.getElementById("navbar").style.padding = "80px 10px";
     document.getElementById("navbar-mid").style.padding = "30px 10px";
     document.getElementById("logo").style.fontSize = "35px";
-    document.getElementById("navbar-bottom").hidden = false;
-    for (let element of document.getElementsByClassName("illustration")) element.hidden = false;
+    document.getElementById("nome-logo-top").style.display = "contents";
+    document.getElementById("navbar-bottom").style.display = "block";
+    for (let element of document.getElementsByClassName("illustration")) 
+            element.style.display = "block";
+
   }
 }
